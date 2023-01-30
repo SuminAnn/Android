@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--LinearLayout(가로와 세로 일열로 나열) orientation(vertical,horizontal)을 지정해줘야한다.-->
+    <!--RelativeLayout(부모의 위치에 맞게 배치)-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Red"
+        android:textSize="20dp"
+        android:text="Test"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Yellow"
+        android:textSize="30dp"
+        android:text="Test"/>
+
+
+</LinearLayout>
