@@ -16,4 +16,4 @@
         android:layout_height="wrap_content"
         android:text="버튼"/>
 </LinearLayout>
-<!--edit text : input box라고 생각하면 된다 -->
+    <!--edit text : input box라고 생각하면 된다 -->
