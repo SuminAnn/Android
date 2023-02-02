@@ -26,9 +26,9 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" /> <!--앱을 실행할때 처음으로 시작되는 Activity를 지정 -->
             </intent-filter> <!-- 첫 Activity를 만들기 위해서 필요한 부분 -->
         </activity>
-    </application>
+    </application><!-- 기본 앱 설정들을 할 수 있다 -->
 
 </manifest>
