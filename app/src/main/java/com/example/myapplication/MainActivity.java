@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 str = et_text.getText().toString(); //editText의 값을 String으로 변환
-                Intent intent = new Intent(MainActivity.this, NavigationActivity.class); //(기존화면, 이동하고싶은 화면)
+                Intent intent = new Intent(MainActivity.this, ListviewActivity.class); //(기존화면, 이동하고싶은 화면)
                 intent.putExtra("str",str); //putExtra(data를 담는다)
                 startActivity(intent); // 액티비티 이동
             }
