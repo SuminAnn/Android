@@ -30,7 +30,15 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String id = et_id.getText().toString();
                 String pass = et_pass.getText().toString();
-                Toast.makeText(LoginActivity.this, "id : " + id + "\n" + "pass : " + pass, Toast.LENGTH_SHORT).show();
+                if(id.equals("orion") && pass.equals("orionpass")){
+                    Intent intent = new Intent(LoginActivity.this, RecyclerViewActivity.class);
+                    intent.putExtra("id", id);
+                    intent.putExtra("pwd", pass);
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(LoginActivity.this, "아이디와 비밀번호를 확인해주세요", Toast.LENGTH_SHORT).show();
+                }
+//                Toast.makeText(LoginActivity.this, "id : " + id + "\n" + "pass : " + pass, Toast.LENGTH_SHORT).show();
             }
         });
     }

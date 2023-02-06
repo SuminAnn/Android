@@ -50,8 +50,9 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAd
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-
-                remove(holder.getAdapterPosition());
+                String curPwd = holder.tv_pwd.getText().toString();
+                Toast.makeText(v.getContext(), curPwd, Toast.LENGTH_SHORT).show();
+//                remove(holder.getAdapterPosition());
                 return true;
             }
         });

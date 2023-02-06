@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,7 +38,10 @@ public class RecyclerViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(itemList.size()<10){
-                    ItemList item = new ItemList(itemList.size()+1,R.drawable.ic_launcher_background, "orion", "orionpass");
+                    Intent intent = getIntent();
+                    String id = intent.getStringExtra("id");
+                    String pwd = intent.getStringExtra("pwd");
+                    ItemList item = new ItemList(itemList.size()+1,R.mipmap.ic_launcher, id, pwd);
                     itemList.add(item);
                     customRecyclerAdapter.notifyDataSetChanged(); // 새로고침
                 }else{
